@@ -1,0 +1,59 @@
+{
+  "name": "rabbit",
+  "version": "0.1.0",
+  "private": true,
+  "keywords": [
+      "兔宝宝",
+      "家具",
+      "家具分享",
+      "兔宝宝家具",
+      "兔宝宝官网"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "cc": "hygen component with-prompt",
+    "cv": "hygen view with-prompt",
+    "prettier": "./node_modules/.bin/prettier --write"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "element-ui": "^2.13.2",
+    "glob": "^7.1.6",
+    "swiper": "^5.4.5",
+    "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-router": "^3.1.6"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-plugin-router": "~4.3.0",
+    "@vue/cli-plugin-vuex": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "hygen": "^5.0.3",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^2.0.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "prettier --write",
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

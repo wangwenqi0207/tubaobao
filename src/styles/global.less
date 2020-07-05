@@ -1,0 +1,55 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    &::after, &::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+a {
+    color: #fff;
+}
+
+body {
+    font-size:16px;
+    font-family:SourceHanSansSC-Medium,SourceHanSansSC;
+    color:#333;
+    line-height:24px;
+    background: #fff;
+}
+
+img {
+    display: block;
+}
+
+//去掉输入框后自带的叉叉
+input[type=search]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+ul,
+ol,
+a,
+b,
+i {
+    font-style: normal;
+    text-decoration: none;
+    list-style-type: none
+}
+
+textarea {
+    resize: none
+}
+
+input,
+textarea {
+    &::-webkit-input-placeholder {
+        font-weight: normal;
+        color: #c2c2c2;
+        font-size: 30px;
+    }
+}
